@@ -11,3 +11,11 @@
   font-family: "Andasia";
   src: url(assets/fonts/Andasia.ttf);
 }
+
+.primary {
+  @apply bg-amber-800;
+}
+
+.primary-hover {
+  @apply hover:bg-amber-900;
+}

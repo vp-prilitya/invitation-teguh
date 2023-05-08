@@ -1,6 +1,3 @@
-// import Flower from "./Flower";
-// import FlowerMobile from "./FlowerMobile";
-
 import ArrowBottom from "./ArrowBottom";
 
 function FirstPage({ open, onClick }) {
@@ -8,11 +5,11 @@ function FirstPage({ open, onClick }) {
     <div
       className={` ${
         open ? "h-0 backdrop-blur-none" : "h-screen backdrop-blur-sm"
-      } fixed flex justify-center w-screen overflow-hidden bg-blue-900 bg-opacity-10 ease-in-out duration-700 z-50`}
+      } fixed flex justify-center w-screen overflow-hidden bg-cokelat bg-opacity-20 ease-in-out duration-700 z-50 `}
       onClick={open ? onClick : null}
     >
       <div
-        className={` relative flex flex-col justify-center items-center my-auto rounded-lg text-sky-900`}
+        className={` relative flex flex-col justify-center items-center my-auto rounded-lg text-stone-300`}
       >
         <h1 className="text-center font-spaceMono text-2xl md:text-4xl font-semibold">
           THE WEDDING
@@ -33,9 +30,9 @@ function FirstPage({ open, onClick }) {
         </div>
         <div className="flex justify-center items-center space-x-2 mt-5">
           <p className="font-spaceMonon font-bold">JUNI</p>
-          <div className="bg-grayLight rounded-full p-2">
+          <div className="bg-grayDark rounded-full p-2">
             <span className="text-3xl text-blue-50 font-bold font-spaceMono">
-              25
+              23
             </span>
           </div>
 
@@ -46,12 +43,12 @@ function FirstPage({ open, onClick }) {
         <p className="font-spaceMono mt-5 text-sm">
           Kepada Bapak/Ibu/Saudara/i
         </p>
-        <h1 className="text-xl text-grayDark font-bold font-spaceMono uppercase mt-2">
+        <h1 className="text-xl text-stone-300 font-bold font-spaceMono uppercase mt-2">
           Viraka Prilitya
         </h1>
         <button
           onClick={onClick}
-          className="flex bg-blue-600 px-5 items-center rounded-md text-white py-1 mt-4 hover:bg-blue-700 transition duration-300"
+          className="flex bg-primary px-5 items-center rounded-lg hover:bg-primary-900 text-white py-1 mt-10 transition duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
