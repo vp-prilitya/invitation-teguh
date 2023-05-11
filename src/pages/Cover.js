@@ -1,10 +1,9 @@
 export default function Cover({ open }) {
   return (
-    <div className="relative h-screen overflow-hidden shadow-lg">
+    <div className="relative h-screen overflow-hidden">
       <img
         alt=""
         src={`${process.env.REACT_APP_HOST}images/bunga.svg`}
-        // src="https://firebasestorage.googleapis.com/v0/b/sign-in-tutorial-89946.appspot.com/o/bunga.svg?alt=media&token=8304e5fa-b003-4b9d-b40a-b3c4bbbeaecc"
         className={`  ${
           open ? "-left-[78%]" : "-left-[55%]"
         } absolute z-20 lg:h-screen w-screen  lg:-left-[41%] animate-bounce-slow duration-1000`}
@@ -17,20 +16,19 @@ export default function Cover({ open }) {
         <img
           alt=""
           src={`${process.env.REACT_APP_HOST}images/bunga.svg`}
-          // src="https://firebasestorage.googleapis.com/v0/b/sign-in-tutorial-89946.appspot.com/o/bunga.svg?alt=media&token=8304e5fa-b003-4b9d-b40a-b3c4bbbeaecc"
           className={`animate-bounce-slow lg:h-screen`}
         />
       </div>
       <div
         className={` ${
           open ? "opacity-100" : "opacity-50"
-        } relative h-[100vh] z-10 bg-poto bg-cover bg-no-repeat bg-primaryDark bg-center lg:bg-contain duration-700 overflow-hidden`}
+        } relative h-[100vh] z-10 bg-poto bg-cover bg-no-repeat bg-primary lg:bg-center lg:bg-contain duration-700 overflow-hidden`}
       >
-        <div className="bg-primary w-full h-full bg-opacity-30"></div>
+        <div className="bg-gradient-to-t from-black to-transparent w-full h-full"></div>
         <div
           className={` ${
             open ? "opacity-100" : "opacity-0"
-          } absolute text-center text-stone-300 bottom-24 lg:bottom-12 duration-1000`}
+          } absolute text-center text-stone-300 bottom-0 lg:bottom-0 duration-1000`}
         >
           <div className="mb-36">
             <h1 className="text-3xl lg:text-5xl font-semibold font-andasia">
@@ -48,6 +46,12 @@ export default function Cover({ open }) {
             <br />
             (Ar-Rum: 21)
           </p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#fff"
+              d="M0 64l48 26.7C96 117 192 171 288 197.3 384 224 480 224 576 208s192-48 288-74.7C960 107 1056 85 1152 96s192 53 240 74.7l48 21.3v128H0z"
+            ></path>
+          </svg>
         </div>
       </div>
     </div>

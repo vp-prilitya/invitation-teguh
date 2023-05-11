@@ -1,6 +1,6 @@
 import ArrowBottom from "./ArrowBottom";
 
-function FirstPage({ open, onClick }) {
+function FirstPage({ open, onClick, to }) {
   return (
     <div
       className={` ${
@@ -44,7 +44,7 @@ function FirstPage({ open, onClick }) {
           Kepada Bapak/Ibu/Saudara/i
         </p>
         <h1 className="text-xl text-stone-300 font-bold font-spaceMono uppercase mt-2">
-          Viraka Prilitya
+          {to && atob(to)}
         </h1>
         <button
           onClick={onClick}

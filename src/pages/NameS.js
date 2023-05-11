@@ -1,4 +1,3 @@
-import Bird from "../components/Bird";
 import Bismillah from "../components/Bismillah";
 import NameMempelai from "../components/NameMempelai";
 
@@ -7,6 +6,20 @@ export default function Names({ className }) {
     <div
       className={` ${className} relative flex overflow-hidden flex-col items-center justify-center text-stone-800 py-12 lg:px-40`}
     >
+      <img
+        alt=""
+        src={`${process.env.REACT_APP_HOST}images/bunga.svg`}
+        className={` -left-[80%] -top-[10%] absolute z-20 lg:h-screen w-screen  lg:-left-[55%] lg:top-20 animate-bounce-slow duration-1000`}
+      />
+      <div
+        className={` -right-[80%] top-[40%] absolute z-20 w-screen lg:h-screen duration-1000 rotate-180  lg:-right-[15%] lg:top-20`}
+      >
+        <img
+          alt=""
+          src={`${process.env.REACT_APP_HOST}images/bunga.svg`}
+          className={`animate-bounce-slow lg:h-screen`}
+        />
+      </div>
       <div className="absolute left-0 -top-20 lg:top-0 md:left-[65%]">
         {/* <Bird className="fill-primary opacity-10" /> */}
       </div>
@@ -25,6 +38,7 @@ export default function Names({ className }) {
           parent="(Alm) Bapak Sutarno dan (Alm) Ibu Nabawiyah"
           dataAos="fade-in"
           img={`${process.env.REACT_APP_HOST}images/teguh_solo.png`}
+          linkIg="https://instagram.com/teguh__s?igshid=NTc4MTIwNjQ2YQ=="
         />
         <h1 className="font-andasia text-[2rem] lg:text-[2rem] mt-5">&</h1>
         <NameMempelai
@@ -33,6 +47,7 @@ export default function Names({ className }) {
           parent="Bapak Chandra dan Ibu Nurbaiti"
           dataAos="fade-in"
           img={`${process.env.REACT_APP_HOST}images/aisyah_solo.png`}
+          linkIg="https://instagram.com/aisyahuzerli?igshid=NTc4MTIwNjQ2YQ=="
         />
       </div>
     </div>

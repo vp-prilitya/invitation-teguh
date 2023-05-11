@@ -1,10 +1,24 @@
+import EatIcon from "../components/Eat";
 import RingIcon from "../components/RingIcon";
 
 export default function DatePage(props) {
+  const onclickMap = () => {
+    window.open("https://maps.app.goo.gl/LUxFeJoLxijxrUR8A?g_st=iw");
+  };
+
+  const saveDate = () => {
+    window.open(
+      "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWk1cTQ5MWRhN3BqNzN0bDJvZmlxODdvZzQgdmlyYWthcHJpbGl0eWE3NkBt&tmsrc=virakaprilitya76%40gmail.com"
+    );
+  };
+
   return (
     <div className="p-4 lg:px-40">
-      <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 mt-16 font-spaceMono">
-        <figure className="flex flex-col items-center justify-center p-8 text-center bg-primary border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r">
+      <div className="grid mb-8 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 mt-16 font-spaceMono">
+        <figure
+          data-aos="fade-down"
+          className="flex flex-col items-center justify-center p-8 text-center bg-primary border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r"
+        >
           <blockquote className="max-w-2xl mx-auto mb-4 text-gold lg:mb-8 ">
             <div className="flex justify-center items-center">
               <RingIcon className="w-14 mb-3 fill-gold"></RingIcon>
@@ -19,9 +33,10 @@ export default function DatePage(props) {
           </blockquote>
           <svg
             fill="none"
+            onClick={onclickMap}
             stroke="currentColor"
             strokeWidth={1.5}
-            className="w-10 h-10 text-gold animate-bounce-fast"
+            className="w-10 h-10 text-gold animate-bounce"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -36,8 +51,14 @@ export default function DatePage(props) {
             Jl. Sidomulyo IV, Senapelan, Pekabaru, Riau
           </p>
         </figure>
-        <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r">
+        <figure
+          data-aos="fade-up"
+          className="flex flex-col  items-center justify-center p-8 text-center bg-gray-50 border border-gray-200 rounded-b-lg md:rounded-t-none md:rounded-tl-lg md:border-r"
+        >
           <blockquote className="max-w-2xl mx-auto mb-4 text-primary lg:mb-8 ">
+            <div className="flex justify-center items-center">
+              <EatIcon className="w-14 mb-3 fill-primary" />
+            </div>
             <h3 className="text-lg font-semibold text-primary uppercase">
               Resepsi
             </h3>
@@ -50,7 +71,7 @@ export default function DatePage(props) {
             fill="none"
             stroke="currentColor"
             strokeWidth={1.5}
-            className="w-10 h-10 text-primary animate-bounce-fast"
+            className="w-10 h-10 text-primary animate-bounce"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
@@ -67,6 +88,7 @@ export default function DatePage(props) {
       <div className="flex justify-center mb-2">
         <button
           type="button"
+          onClick={saveDate}
           className="text-white bg-gold hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2"
         >
           <svg

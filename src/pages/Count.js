@@ -1,4 +1,31 @@
+import Countdown from "react-countdown";
+
 export default function Count() {
+  const renderer = ({ days, hours, minutes, seconds }) => {
+    return (
+      <>
+        <div className="bg-primary w-16 p-2 rounded-lg text-white">
+          <h1 className="text-xl font-bold">{days}</h1>
+          <p className="text-xs">Hari</p>
+        </div>
+        <div className="bg-primary w-16 p-2 rounded-lg text-white">
+          <h1 className="text-xl font-bold">{hours}</h1>
+          <p className="text-xs">Jam</p>
+        </div>
+        <div className="bg-primary w-16 p-2 rounded-lg text-white">
+          <h1 className="text-xl font-bold">{minutes}</h1>
+          <p className="text-xs">Menit</p>
+        </div>
+        <div className="bg-primary w-16 p-2 rounded-lg text-white">
+          <h1 data-aos="flip-right" className="text-xl font-bold">
+            {seconds}
+          </h1>
+          <p className="text-xs">Detik</p>
+        </div>
+      </>
+    );
+  };
+
   return (
     <div className=" p-4 bg-cokelatLight bg-opacity-10 py-20 lg:px-40">
       <div
@@ -23,22 +50,10 @@ export default function Count() {
             suci kami di hari yang bahagia.
           </p>
           <div className="flex justify-evenly mt-5">
-            <div className="bg-primary w-16 p-2 rounded-lg text-white">
-              <h1 className="text-xl font-bold">030</h1>
-              <p className="text-xs">Hari</p>
-            </div>
-            <div className="bg-primary w-16 p-2 rounded-lg text-white">
-              <h1 className="text-xl font-bold">23</h1>
-              <p className="text-xs">Jam</p>
-            </div>
-            <div className="bg-primary w-16 p-2 rounded-lg text-white">
-              <h1 className="text-xl font-bold">18</h1>
-              <p className="text-xs">Menit</p>
-            </div>
-            <div className="bg-primary w-16 p-2 rounded-lg text-white">
-              <h1 className="text-xl font-bold">11</h1>
-              <p className="text-xs">Detik</p>
-            </div>
+            <Countdown
+              date={new Date("2023-06-23T00:00:00")}
+              renderer={renderer}
+            />
           </div>
         </div>
       </div>

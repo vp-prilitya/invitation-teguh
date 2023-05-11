@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -26,6 +24,7 @@ module.exports = {
       animation: {
         "bounce-slow": "bounce-slow 5s linear infinite ",
         "bounce-fast": "bounce-fast 2s linear infinite ",
+        "spin-slow": "spin 4s linear infinite",
         "bounce-slow-mobile": "bounce-slow-mobile 5s linear infinite",
       },
       keyframes: {
@@ -44,7 +43,8 @@ module.exports = {
       },
       backgroundImage: {
         paint: "url('assets/images/paint.svg')",
-        poto: "url('http://192.168.6.164:3000/images/teguh.jpg')",
+        poto: "url('https://api.webbee.my.id/images/teguh.jpg')",
+        potoFooter: "https://api.webbee.my.id/images/footer.gif')",
       },
     },
   },
