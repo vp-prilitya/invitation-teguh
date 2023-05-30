@@ -31,7 +31,7 @@ export default function Names({ className }) {
         Tanpa Mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta
         kerabat sekalian untuk menghadiri acara pernikahan kami:
       </p>
-      <div className="flex flex-col justify-center mt-8 text-center">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly w-full mt-8 text-center">
         <NameMempelai
           name="Teguh Suprayitno S.T"
           form="PUTRA PERTAMA DARI"
@@ -40,7 +40,9 @@ export default function Names({ className }) {
           img={`${process.env.REACT_APP_HOST}images/teguh_solo.png`}
           linkIg="https://instagram.com/teguh__s?igshid=NTc4MTIwNjQ2YQ=="
         />
-        <h1 className="font-andasia text-[2rem] lg:text-[2rem] mt-5">&</h1>
+        <h1 className="font-andasia lg:hidden text-[2rem] lg:text-[2rem] mt-5">
+          &
+        </h1>
         <NameMempelai
           name="Aisyah S. psi"
           form="PUTRI PERTAMA DARI"

@@ -2,7 +2,7 @@ import avatarColor from "../configs/utils";
 
 function BubbleChat({ name, message, time }) {
   return (
-    <div className="flex items-center gap-2 mb-3">
+    <div className="flex items-end gap-2 mb-3">
       <button
         className={`${
           avatarColor[name[0].toUpperCase()]

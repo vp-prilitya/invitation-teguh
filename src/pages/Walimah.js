@@ -7,7 +7,7 @@ import PrayIcon from "../components/Pray";
 export default function WalimahPage() {
   return (
     <div className="relative flex-col mt-14" data-aos="fade-up">
-      <div className="absolute right-0 bg-gray-100 w-1/2 h-full -z-10 "></div>
+      {/* <div className="absolute lg:hidden right-0 bg-gray-100 w-1/2 h-full -z-10 "></div> */}
       <Header>Adab Menghadiri Walimah</Header>
       <div className="flex justify-center mt-10 pb-10 gap-4">
         <div className="flex-col space-y-4">

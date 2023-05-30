@@ -5,7 +5,7 @@ export default function CreateLink() {
   const [name, setName] = useState("");
 
   const clickSubmit = () => {
-    setLink(`http://localhost:3001/${btoa(name)}`);
+    setLink(`https://teguh-aisyah.webbee.my.id/${btoa(name)}`);
     setName("");
   };
 

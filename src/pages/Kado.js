@@ -18,7 +18,7 @@ export default function Kado() {
         Apabila Bapak/Ibu/Saudara/i ingin memberikan hadiah pernikahan kepada
         kami, dapat melalui informasi berikut
       </p>
-      <div className="flex justify-evenly mt-10">
+      <div className="flex-row md:flex space-y-10 md:space-y-0 justify-evenly mt-10">
         <div className="flex flex-col items-center justify-between">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg"

@@ -49,7 +49,7 @@ export default function Count() {
             kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji
             suci kami di hari yang bahagia.
           </p>
-          <div className="flex justify-evenly mt-5">
+          <div className="flex justify-evenly lg:justify-center lg:space-x-10 mt-5">
             <Countdown
               date={new Date("2023-06-23T00:00:00")}
               renderer={renderer}

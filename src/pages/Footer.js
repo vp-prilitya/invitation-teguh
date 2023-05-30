@@ -2,7 +2,7 @@ import Floral from "../components/floral";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-potoFooter bg-cover bg-no-repeat bg-primary mt-8">
+    <div className="w-full bg-potoFooter bg-cover bg-no-repeat lg:bg-center lg:bg-contain bg-primary mt-8">
       <div className="bg-black bg-opacity-20 w-full h-full">
         <div className="rotate-180">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

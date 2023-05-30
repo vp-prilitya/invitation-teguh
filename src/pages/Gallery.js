@@ -4,7 +4,7 @@ export default function Gallery() {
   return (
     <div className="p-4 lg:px-40">
       <Header>Our Gallery</Header>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <div>
           <img
             data-aos="zoom-in"

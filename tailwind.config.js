@@ -44,7 +44,7 @@ module.exports = {
       backgroundImage: {
         paint: "url('assets/images/paint.svg')",
         poto: "url('https://api.webbee.my.id/images/teguh.jpg')",
-        potoFooter: "https://api.webbee.my.id/images/footer.gif')",
+        potoFooter: "url('https://api.webbee.my.id/images/footer.gif')",
       },
     },
   },
